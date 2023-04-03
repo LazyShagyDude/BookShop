@@ -1,0 +1,92 @@
+th,
+td {
+  padding: 5px 20px 10px 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.information {
+  display: flex;
+  margin: 0 5%;
+}
+
+.pic {
+  min-width: 200px;
+  box-sizing: border-box;
+}
+
+.title {
+  margin-top: 30px;
+  font-size: 20px;
+  width: 250px;
+  word-wrap: break-word;
+}
+
+.author {
+  color: rgb(201, 134, 25);
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.divider {
+  border-bottom: 1px solid #adadad;
+  padding: 5px;
+  /* width: 80%; */
+}
+
+.table {
+  margin-top: 10px;
+}
+
+.annotation {
+  margin: 5% 5% 0 2%;
+  line-height: 20px;
+  width: 50%;
+  word-wrap: break-word;
+}
+
+.annotation span {
+  display: inline-block;
+  margin: 5% 0 3% 0;
+  font-size: 15px;
+  color: rgb(201, 134, 25);
+}
+
+.titleOfReview {
+  margin: 20px 7%;
+  font-size: 20px;
+}
+
+@media (max-width: 1178px) {
+  .information {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .annotation {
+    margin: 5% 10%;
+    width: 100%;
+  }
+
+  .titleOfReview {
+    margin: 40px 13%;
+  }
+
+  .reviews {
+    margin: 0% 13%;
+  }
+}
+
+@media (max-width: 765px) {
+  .pic {
+    max-width: 90%;
+  }
+
+  .wrapper {
+    max-width: 60%;
+  }
+}

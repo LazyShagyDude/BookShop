@@ -1,0 +1,152 @@
+th,
+td {
+  padding: 5px 20px 10px 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.information {
+  display: flex;
+  margin: 0 5%;
+}
+
+.pic {
+  min-width: 200px;
+  box-sizing: border-box;
+}
+
+.title {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.author {
+  color: rgb(201, 134, 25);
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.divider {
+  border-bottom: 1px solid #adadad;
+  padding: 5px;
+}
+
+.table {
+  margin-top: 10px;
+}
+
+.annotation {
+  margin: 5% 5% 0 2%;
+  line-height: 20px;
+}
+
+.annotation span {
+  display: inline-block;
+  margin: 5% 0 3% 0;
+  font-size: 15px;
+  color: rgb(201, 134, 25);
+}
+
+.titleOfReview {
+  margin: 20px 7%;
+  font-size: 20px;
+}
+
+.button {
+  height: 40px;
+  margin: 10px 0;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1281px) {
+  .information {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 800px;
+    margin: auto;
+  }
+
+  .annotation {
+    margin: 0 5%;
+  }
+
+  .titleOfReview {
+    margin: 40px auto;
+    text-align: center;
+  }
+
+  .reviews {
+    margin: 0% 13%;
+  }
+}
+
+@media (max-width: 765px) {
+  .pic {
+    max-width: 90%;
+  }
+
+  .wrapper {
+    max-width: 60%;
+  }
+
+  .information {
+    width: 600px;
+    margin: auto;
+  }
+
+  .annotation {
+    margin: 0;
+  }
+}
+
+@media (max-width: 668px) {
+  .information {
+    width: 90%;
+  }
+}
+
+/* **************** */
+.rating_area {
+  overflow: hidden;
+  margin: 0 auto;
+}
+.rating_area:not(:checked) > input {
+  display: none;
+}
+.rating_area:not(:checked) > label {
+  float: right;
+  padding: 0;
+  cursor: pointer;
+  font-size: 32px;
+  line-height: 32px;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+.rating_area:not(:checked) > label:before {
+  content: "★";
+}
+.rating_area > input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px #c60;
+}
+.rating_area:not(:checked) > label:hover,
+.rating_area:not(:checked) > label:hover ~ label {
+  color: gold;
+}
+.rating_area > input:checked + label:hover,
+.rating_area > input:checked + label:hover ~ label,
+.rating_area > input:checked ~ label:hover,
+.rating_area > input:checked ~ label:hover ~ label,
+.rating_area > label:hover ~ input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px goldenrod;
+}
+.rate_area > label:active {
+  position: relative;
+}

@@ -1,0 +1,42 @@
+.reviews {
+  border: 1px solid #c1c1c1;
+  margin: 1% 7%;
+  padding: 20px 30px 20px 20px;
+}
+
+.reviews .rating {
+  align-items: flex-end;
+}
+
+.reviews .rating {
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.comment {
+  line-height: 25px;
+}
+
+.plus,
+.minus {
+  font-weight: bold;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.svg {
+  width: 24px;
+  height: 24px;
+}
+
+.number {
+  padding: 0 10px;
+}
